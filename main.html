@@ -1,71 +1,70 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet complet – StoryMap & contenu</title>
-  <link rel="stylesheet" href="css/global.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <title>Leaflet Storymaps with Google Sheets Template</title>
+
+  <!-- Load Leaflet CSS and JS-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Load Leaflet basemap providers -->
+  <script src="https://unpkg.com/leaflet-providers@2.0.0/leaflet-providers.js"></script>
+
+  <!-- Load jQuery  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <!-- Load PapaParse -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+
+  <!-- Load Lightbox -->
+  <script src="scripts/lightbox/js/lightbox.js"></script>
+  <link rel="stylesheet" href="scripts/lightbox/css/lightbox.css" />
+
+  <!-- Load Font-Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="markers/leaflet.extra-markers.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-desktop.css">
+  <link rel="stylesheet" href="css/loader.css">
 </head>
 
 <body>
-  <header>
-    <h1>PortFolio</h1>
-    <h2>Nathan FOLMER</h2>
-  </header>
 
-  <div class="centre">
-
-  <main>
-
-    <section id="presentation">
-      <h2>About me</h2>
-      <p>Curious and committed by nature, I'm particularly interested in
-        imagery, multi-source data management and GIS in the
-        geomatics master's program at AgroParisTech.
-        Sensitive to major geopolitical and environmental issues, I'm now looking for a professional opportunity to put my passion, knowledge and commitment to good use in these fascinating fields.
-        
-        First, discover my professional experience in geomatics, followed by details of my skills. Finally, explore my academic background for a complete overview of my profile.
-    </section>
-
-    
-    <section id="work_experience" class="storymap1">
-        <h2>Work experience</h2>
-        <iframe src="index.html"></iframe>
-    </section>
-    
-
-    <section id="skills">
-        <h2>Technical skills & Competencies</h2>
-        <p>Mapping</p>
-        <iframe src="diapo.html"></iframe>
-        <p>Remote Sensing</p>
-        <p>Programming</p>
-        <p>Data Management</p>
-        <p>Soft skills</p>
-    </section>
-
-    <section id="education">
-        
-        <h2>Education</h2>
-        <iframe src="storymap2.html"></iframe>
-        
-        <p>other trainings</p>
-        
-    </section>
-
-
-    <section id="reference">
-      <h2>Reference</h2>
-      <p>Sven contact</p>
-    </section>
-  
-</main>
-  <footer>
-    <h2> -Contact- </h2>
-    <p>email: nathanblanc.74@gmail.com
-      Postal Adress:  15 rue des coquelicots, 34000 Montpellier, FRANCE
-    </p>
-  </footer>
+  <div id="title">
+    <div id="header"></div>
   </div>
+
+  <div id="narration">
+    <div id="contents">
+      <div id="top"></div>
+    </div>
+  </div>
+
+  <div class="loader">Loading...</div>
+  <div id="map"></div>
+
+  <script type="text/javascript">
+    // Create the Leaflet map with a generic start point
+    var map = L.map('map', {
+      center: [0, 0],
+      zoom: 1,
+      scrollWheelZoom: false,
+      zoomControl: false,
+      tap: false
+    });
+  </script>
+
+  <script type="text/javascript" src="google-doc-url.js"></script>
+  <script type="text/javascript" src="markers/leaflet.extra-markers.min.js"></script>
+  <script type="text/javascript" src="scripts/constants.js"></script>
+  <script type="text/javascript" src="scripts/jquery.csv.js"></script>
+  <script type="text/javascript" src="scripts/storymap.js"></script>
+
 </body>
 </html>
