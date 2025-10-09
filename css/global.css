@@ -9,17 +9,34 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
+  /*height: 100%; a modifier si emerde*/
   
 }
 
 header{
     text-align: center;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;   /* empile le h1 et le p verticalement */
+    justify-content: center;  /* centre verticalement */
+    align-items: center;      /* centre horizontalement */
+    min-height: 100vh;        /* occupe toute la hauteur de l’écran */
+}
+section h1, section h2, section h3, section p {
+  margin-left: 130px;
+  width: 80%;               /* limite la largeur du texte à 80% */
+  text-align: center,justify;       /* centre le texte à l’intérieur */
 }
 
 p{
 text-align: justify;
 }
+
+
 
 
 .centre {
@@ -37,45 +54,69 @@ iframe {
 }
 
 /* ---------------------------------------------------------*/
-/* Style the navbar */
-#navbar {
-    position: sticky;
-    top: 0;
+/* --- BARRE D’ONGLETS --- */
+.tab-bar {
     display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    background-color: #333333;
+    width: 100%;
+    position: sticky; /* reste visible en haut si tu scrolles */
+    top: 0;
+    z-index: 100;
+    width: 100vw;
   }
   
-  /* Navbar links */
-  #navbar a {
-    flex: 1;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    transition: all 0.1s ease;
-  }
-  
-  
-  /* Page content */
-  /*.content {
-    padding: 50px;
-  }*/
-  
-/* --- Effet au survol --- */
-#navbar a:hover {
+  /* --- BOUTONS D’ONGLET --- */
+  .tablink {
+    flex: 1; /* chaque bouton prend une part égale de l’espace */
     background-color: #555;
-    color: #fff;
-  }
-  
-  /* --- Onglet actif --- */
-  #navbar a.active {
-    background-color: #04AA6D;
     color: white;
-    border-bottom: 3px solid #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0;
+    font-size: 17px;
+    text-align: center;
+    transition: background-color 0.3s ease;
   }
- 
   
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  
+  #presentation {background-color: rgb(25, 24, 24);}
+  #work_experience {background-color:rgb(25, 24, 24);}
+  #skills {background-color: rgb(25, 24, 24);}
+  #education {background-color:rgb(25, 24, 24);}
+  #contact {background-color:rgb(25, 24, 24);}
+
+
+
+
+/* --- HEADER AVEC IMAGE DE FOND --- */
+.hero-header {
+    background-image: url('../media/cameroun.jpg'); /* ton image */
+    background-size: cover;      /* occupe toute la largeur/hauteur */
+    background-position: center; /* centre l’image */
+    background-repeat: no-repeat;
+    height: 100vh;               /* occupe toute la hauteur de l’écran */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Optionnel : voile sombre sur l’image */
+  .hero-header .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* léger effet sombre */
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px;
+  }
