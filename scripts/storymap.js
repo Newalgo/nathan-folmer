@@ -502,4 +502,24 @@ $(window).on('load', function() {
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
   }
 
+  // 🔧 Correction pour intégration dans des iframes (portfolios, onglets, etc.)
+  window.addEventListener('resize', function() {
+    if (typeof map !== 'undefined' && map.invalidateSize) {
+      map.invalidateSize();
+    }
+  });
+
+  // 🔧 Ajout pour redessiner la carte quand l’iframe devient visible
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible' && typeof map !== 'undefined') {
+      setTimeout(() => map.invalidateSize(), 400);
+    }
+  });
+
+
+
+
+
+
+  
 });

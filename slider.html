@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before & After Slider</title>
+  <link rel="stylesheet" href="css/slider.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link href="css/ba-slider.css" rel="stylesheet" />
+<script src="scripts/ba-slider.min.js"></script>
+</head>
+<body>
+
+    <div class="comparison-slider-wrapper">
+        <div id="ba-slider" class="comparison-slider">
+                <div class="overlay">text</div>
+                <img src="media/reunion2.png"/>
+            <div class="resize">
+                <div class="overlay">text</div>
+                <img src="media/reunion1.png"/>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            baSlider("#ba-slider");
+        });
+    </script>
+</body>
+</html>

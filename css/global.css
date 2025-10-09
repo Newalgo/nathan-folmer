@@ -26,7 +26,7 @@ section{
     align-items: center;      /* centre horizontalement */
     min-height: 100vh;        /* occupe toute la hauteur de l’écran */
 }
-section h1, section h2, section h3, section p {
+section h1, section h2, section h3, section p,section iframe {
   margin-left: 130px;
   width: 80%;               /* limite la largeur du texte à 80% */
   text-align: center,justify;       /* centre le texte à l’intérieur */
