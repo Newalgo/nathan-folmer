@@ -26,7 +26,8 @@ section{
     align-items: center;      /* centre horizontalement */
     min-height: 100vh;        /* occupe toute la hauteur de l’écran */
 }
-section h1, section h2, section h3, section p,section iframe {
+
+section h1, section h2, section h3, section p,section iframe, section #profil {
   margin-left: 130px;
   width: 80%;               /* limite la largeur du texte à 80% */
   text-align: center,justify;       /* centre le texte à l’intérieur */
@@ -34,14 +35,6 @@ section h1, section h2, section h3, section p,section iframe {
 
 p{
 text-align: justify;
-}
-
-
-
-
-.centre {
-  width: 80%;
-  background-color: rgba(222, 184, 135, 0);
 }
 
 
@@ -54,6 +47,21 @@ iframe {
 }
 
 /* ---------------------------------------------------------*/
+/* --- Section Presentation --- */
+
+
+
+section #profil {
+  width: 300px;
+  height: auto;
+  
+        
+}
+
+
+
+
+/* ---------------------------------------------------------*/
 /* --- BARRE D’ONGLETS --- */
 .tab-bar {
     display: flex;
@@ -64,7 +72,7 @@ iframe {
     width: 100vw;
   }
   
-  /* --- BOUTONS D’ONGLET --- */
+  /* ------------ BOUTONS D’ONGLET --- */
   .tablink {
     flex: 1; /* chaque bouton prend une part égale de l’espace */
     background-color: #555;
