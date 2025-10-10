@@ -27,21 +27,22 @@
   <main>
     
       <section id="presentation" class="tabcontent">
-        <h2>About me</h2>
-        <p>Curious and committed by nature, I'm particularly interested in
-          imagery, multi-source data management and GIS in the
-          geomatics master's program at AgroParisTech.
-          Sensitive to major geopolitical and environmental issues, I'm now looking for a professional opportunity to put my passion, knowledge and commitment to good use in these fascinating fields.
-          
-          First, discover my professional experience in geomatics, followed by details of my skills. Finally, explore my academic background for a complete overview of my profile.</p>
-          
+        <div style="float: left; width: 50%;">
+          <h2>About me</h2>
+          <p>Curious and committed by nature, I’m passionate about GIS, imagery, and multi-source data management. I hold a Master’s degree in GIS from <b>AgroParisTech</b>, where I developed a strong interest in how spatial data and technology can be leveraged to better understand and support our world.<br><br>
+            My growing interest in programming and <b>web development</b> has led me to pursue online training through FreeCodeCamp.org, where I’m strengthening my ability to build meaningful GIS apps.<br><br>
+            Beyond GIS, I’m deeply interested in <b>humanitarian work</b> I’ve engaged with through professional experiences and volunteer projects. Recently, during my time in Australia, I joined community food programs <b>supporting remote Aboriginal communities</b> near Alice Springs.<br><br>
+            I’m also passionate about OSINT (Open Source Intelligence) and geospatial investigation, regularly following the work of Bellingcat and completing complementary training with the Institut d’Étude de Géopolitique Appliquée.<br><br>
+            Outside of work, I’m an avid traveler and <b>trekker</b>. I solo-crossed New Zealand’s South Island and enjoy immersing myself in new cultures and landscapes. <br><br>
+            My background and passions reflect a curious, engaged, and motivated mindset, driven by the desire to contribute to projects with purpose and impact.</p>
+        </div>
+        <div style="float: right; width: 50%;">
           <img src="media/profil.png" id="profil" alt="profil"/>
-      
-        </section>
+        </div> 
+      </section>
 
       <!--class="storymap1"-->
       <section id="work_experience" class="tabcontent">
-          <h2>Work experience</h2>
           <iframe src="main.html"></iframe>
       </section>
     
@@ -53,31 +54,92 @@
           <p>Remote Sensing</p>
           <iframe id="slider" src="slider.html"></iframe>
           <p>Programming</p>
+          <div>
           <p>Data Management</p>
+            <video autoplay muted loop id="myVideo">
+              <source src="media/essai_video.mp4" type="video/mp4">
+            </video>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+          </div>
           <p>Soft skills</p>
       </section>
 
       <section id="education" class="tabcontent">
-          
-          <h2>Education</h2>
-          <iframe src="storymap2.html"></iframe>
-          
-          <p>other trainings</p>
-          
+          <iframe src="storymap2.html"></iframe>  
       </section>
 
 
       <section id="contact" class="tabcontent">
-        <h2>Reference</h2>
-        <p>Sven contact</p>
-        <p>email: nathanblanc.74@gmail.com
-        Postal Adress:  15 rue des coquelicots, 34000 Montpellier, FRANCE
-      </p>
+        
+        <div class="references-section">
+          <h2>References</h2>
+        
+          <table class="references-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Organisation</th>
+                <th>Position</th>
+                <th>LinkedIn</th>
+                <th>Email</th>
+                <th>Phone number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sven Schmitz-Leuffen</td>
+                <td>International Committee of the Red Cross (ICRC)</td>
+                <td>Geodata & GIS Lead</td>
+                <td><a href="https://ch.linkedin.com/in/sven-schmitz-leuffen-a4122a5" target="_blank">linkedIn</a></td>
+                <td>sschmitzleuffen@icrc.org</td>
+                <td>+41 22 730 1234</td>
+              </tr>
+              <tr>
+                <td>Philippe Pailler</td>
+                <td>Centre National d'Etudes Spatiales</td>
+                <td>Chef de Service Environnement Sauvegarde Sol</td>
+                <td><a href="https://gf.linkedin.com/in/philippe-pailler-62a86153" target="_blank">linkedIn</a></td>
+                <td>Philippe.Pailler@cnes.fr</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>Jean Francois GIRRES </td>
+                <td>Université Paul Valéry Montpellier</td>
+                <td>Responsable du master Géomatique</td>
+                <td><a href="https://www.univ-montp3.fr/fr/annuaire_recherche/jean-francois-girres" target="_blank">linkedIn</a></td>
+                <td>jean-francois.girres@univ-montp3.fr</td>
+                <td>X</td>
+              </tr>
+              <!-- Ajoute d'autres références ici -->
+            </tbody>
+          </table>
+        
+          <div class="personal-contact">
+            <h3>Personal Contact</h3>
+            <p>Email: <a href="nathanblanc.74@gmail.com">nathanblanc.74@gmail.com</a></p>
+            <p>Phone number: +33 7 63 20 05 32</p>
+          </div>
+        </div>
+        
       </section>
     
   </main>
 
  
   <script src="scripts/fullpagetabs.js"></script>
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+  </script>
 </body>
 </html>
