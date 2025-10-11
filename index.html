@@ -48,20 +48,118 @@
     
 
       <section id="skills" class="tabcontent">
-          <h2>Technical skills & Competencies</h2>
-          <p>Mapping</p>
-          <iframe src="diapo.html"></iframe>
-          <p>Remote Sensing</p>
-          <iframe id="slider" src="slider.html"></iframe>
-          <p>Programming</p>
+          <h2>Mapping</h2>
+          <p>Acquisition, processing and representation of geospatial data applied in various fields such as the environment, land use planning, risk management, etc.
+            Software used: Arcgis Pro and QGIS
+            Data manipulation : 
+            Vector / Raster
+            
+            Type of maps produced: 
+            statistical mapping
+            continuous field mapping
+            chorema
+            Cartograms and anamorphoses
+            Flow maps
+            Relief and land use mapping  
+          </p>
+          <p>Understand relationships and patterns in geographic data through different GIS methods and tools:
+            - Moran Index: Statistical measure to detect spatial clusters and assess correlation between features.
+            - Neighborhood analysis: Study of spatial relationships based on nearest neighbors to identify clusters and average distances.
+            - Interpolation: Estimation of unknown values from observations in neighboring areas to create continuous surfaces.
+          </p>
+
+          <iframe id="diapo1" src="diapo.html"></iframe>
+
+
+          <div class="remote-sensing-container">
+          <h2 class="h2-text">Remote Sensing</h2>
+              <div class="text-teledection">
+                <h3>Applications and Projects:</h3>
+                    <ul>
+                      <li>Photo Interpretation: Manual analysis of satellite imagery to extract meaningful information.</li>
+                      <li>Orthorectifications: Correcting satellite images for geometric distortions to produce accurate map-like representations.</li>
+                      <li>Atmospheric Corrections: Removing atmospheric interference to improve the accuracy of satellite images.</li>
+                      <li>Classification Methods: Implementing various classification techniques such as Bayes, Support Vector Machine (SVM), and Random Forest to categorize different land cover types.</li>
+                      <li>Post Classification Processing: Refining classification results to improve accuracy and usability.</li>
+                    </ul>
+                <h3>Specific Image Processing Tasks:</h3>
+                    <ul>
+                      <li>Cloud Masking: Creating masks to exclude cloud-covered areas from analysis.</li>
+                      <li>Segmentation: Dividing images into meaningful segments for detailed analysis.</li>
+                      <li>Built-Up Change Detection: Identifying and analyzing changes in urban and built-up areas over time.</li>
+                      <li>NDVI Change Detection: Monitoring changes in vegetation health and coverage using the Normalized Difference Vegetation Index (NDVI).</li>
+                    </ul>
+                    <h3>Software utilized:</h3>
+                    <ul>
+                      <li>Google earth Engine (GEE)</li>
+                      <li>Orfeo Tool box (OTB)</li>
+                    </ul>
+                
+                <h3>Types of Images Handled:</h3>
+                    <ul>
+                      <li>Sentinel 1 & 2</li>
+                      <li>WorldView-2/3 (WV02/03)</li>
+                      <li>SkySat</li>
+                      <li>Pleiade-Neo</li>
+                    </ul>
+                
+              </div>
+              <div class="illustration-teledec">
+                <iframe id="slider" src="slider.html"></iframe>
+                <p class="iframe-caption">Supervised classification based on Sentinel 2 images</p>
+                <div class="logo">
+                  <img src="media/orfeoTool.png" class="small-logo" alt="profil"/>
+                  <img src="media/googleEarth.png" class="small-logo" alt="profil"/>
+                </div> 
+              </div>
+          </div>
+
+
+          <h2 class="h2-text">Programming</h2>
+          <p>Python script creation:
+            - for standardization and cleansing of large datasets
+            - for automated data import into a PostgreSQL database
+             
+            Terminal: use Bash to manipulate files and 
+            data streams in a command-line environment.
+          
+            <b>Model Builder<b>
+            Development of a QGIS plugin to automatically detect areas where drones are not allowed to fly. 
+              Via QT-Designer, man-machine interaction has been created.
+              At the plugin's output, 3 vector layers describe the drone's usage restrictions: 
+              - Total ban
+              - 50m height restriction
+              - 100m height restriction
+          </p>
+          
+          <p>Development of a webmapping application based on a 3-tier infrastructure:
+
+            1. Client : I created a user-friendly, interactive user interface using technologies such as HTML, CSS and JavaScript. This allows users to visualize and interact with geospatial data in an intuitive way.
+            
+            2. Apache server: I used the Apache server to host my web application files. It handles HTTP requests and transmits files to the client.
+            
+            3. PostgreSQL: I chose PostgreSQL as the database management system to store and organize my geographic data. Thanks to the SQL language, I was able to write queries to retrieve specific data from my database. I also used PHP to interact with the database, execute queries and return results to the client.
+          </p>
+
+
           <div>
-          <p>Data Management</p>
+            <h2 class="h2-text">Data Management</h2>
+            <p>Modeling, design and processing of databases containing spatial information.
+
+              Use of PostgreSQL software and the PostGis
+               extension to represent spatial data in a GIS.
+              
+               Concrete application: management of fauna/flora
+                data for environmental impact monitoring projects at the Guiana Space Center.
+            </p>
             <video autoplay muted loop id="myVideo">
               <source src="media/essai_video.mp4" type="video/mp4">
             </video>
             <button id="myBtn" onclick="myFunction()">Pause</button>
+          
           </div>
-          <p>Soft skills</p>
+          
+          <h2 class="h2-text">Soft skills</h2>
       </section>
 
       <section id="education" class="tabcontent">
@@ -110,7 +208,6 @@
                 <td>jean-francois.girres@univ-montp3.fr</td>
                 <td>X</td>
               </tr>
-              <!-- Ajoute d'autres références ici -->
             </tbody>
           </table>
         

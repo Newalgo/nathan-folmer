@@ -2,12 +2,14 @@
     position: relative;
     width: 100%;
     margin: 20px 0;
-    background-color: #ffffff; }
+    border-radius: 3%;
+    }
     .comparison-slider-wrapper .comparison-slider {
       position: relative;
       width: 100%;
       margin: 0;
-      border: 5px #ffffff solid;
+      border: 5px #000000 solid;
+      border-radius: 3%;
       box-sizing: border-box; }
       .comparison-slider-wrapper .comparison-slider > img {
         width: 100%;
