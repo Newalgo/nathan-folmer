@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Projects</title>
   <link href="css/skills.css" rel="stylesheet" />
-<script src="scripts/skills.js"></script>
 </head>
 <body>
-
-    <h2>PORTFOLIO</h2>
     <div id="myBtnContainer">
     <button class="btn" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn active" onclick="filterSelection('mapping')">Mapping</button>
+    <button class="btn" onclick="filterSelection('mapping')">Mapping</button>
     <button class="btn" onclick="filterSelection('remote-sensing')">Remote Sensing</button>
     <button class="btn" onclick="filterSelection('programming')">Programming</button>
     <button class="btn" onclick="filterSelection('data')">Data Management</button>
@@ -22,76 +19,58 @@
     <div class="row">
         
     <div class="column mapping">
-        <h1>Testdqfvjndqlfjvbqdlfkjv bqdlkfv lqdkfhv</h1>
-        <p>nqdklfjvndlkfjvnlqkdfjnvqdlkfjnvqdlkfjnvqlkdfjnvklqdfjn</p>
         <div class="content">
         <a href="projet-pdf/Projet_analyse_spatiale.pdf" target="_blank" alt="Mountains" style="width:100%">
             <img src="projet-pdf/preview/criminalite.png" alt="criminalite" class="pdf-thumbnail">
         </a>
-        <h4>Rapport d'enquête sur la criminalité à San Francisco</h4>
-        <p>test.</p>
+        <h4>San Francisco Crime Investigation Report</h4>
+        <p>The aim of this report is to construct a spatial analysis of crime in San Francisco.
+            In other words, to understand the causes of the distribution and concentration of crime in this city.
+            Crime is defined here as all illegal, delinquent and criminal acts.</p>
         </div>
     </div>
-    <div class="column nature">
+    <div class="column remote-sensing">
         <div class="content">
-        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-        <h4>Lights</h4>
-        <p>Lorem ipsum dolor..</p>
+        <a href="projet-pdf/projet_teledec.pdf" target="_blank" alt="Mountains" style="width:100%">
+            <img src="projet-pdf/preview/teledec1.png" alt="reunion" class="pdf-thumbnail">
+        </a>
+        <h4>Land cover mapping on Réunion Island</h4>
+        <p>Creating a land use map using supervised classification.</p>
         </div>
     </div>
-    <div class="column nature">
+    <div class="column programming">
         <div class="content">
-        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-        <h4>Forest</h4>
-        <p>Lorem ipsum dolor..</p>
+        <a href="projet-pdf/Projet_Plugin.pdf" target="_blank" alt="Mountains" style="width:100%">
+            <img src="projet-pdf/preview/plugin.png" alt="plugin" class="pdf-thumbnail">
+        </a>
+        <h4>QGIS Plugin Development</h4>
+        <p>Through this plugin development project, I wanted to create a QGIS extension
+            that would allow drone pilots to quickly visualise, within a defined area,
+            flight restriction zones.</p>
         </div>
     </div>
-
-    <div class="column cars">
+    <div class="column programming">
         <div class="content">
-        <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-        <h4>Retro</h4>
-        <p>Lorem ipsum dolor..</p>
+        <a href="projet-pdf/Projet_webmapping.pdf" target="_blank" alt="Mountains" style="width:100%">
+            <img src="projet-pdf/preview/webmapping1.png" alt="plugin" class="pdf-thumbnail">
+        </a>
+        <h4>Interactive map of the main route to Santiago de Compostela</h4>
+        <p>This web application provides pilgrims with a range of useful information for their pilgrimage. It includes a map showing places where hikers can stay, areas to visit, places to eat, and more.</p>
         </div>
     </div>
-    <div class="column cars">
+    <div class="column data">
         <div class="content">
-        <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-        <h4>Fast</h4>
-        <p>Lorem ipsum dolor..</p>
+        <a href="projet-pdf/Projet_BDD.pdf" target="_blank" alt="Mountains" style="width:100%">
+            <img src="projet-pdf/preview/bdd1.png" alt="plugin" class="pdf-thumbnail">
+        </a>
+        <h4>Development of a spatial database for environmental impact assessment</h4>
+        <p>Development of a naturalist database to compile all fauna and flora observations at the Guiana Space Centre, facilitating the assessment of the impact of space projects on local biodiversity.</p>
         </div>
     </div>
-    <div class="column cars">
-        <div class="content">
-        <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-        <h4>Classic</h4>
-        <p>Lorem ipsum dolor..</p>
-        </div>
-    </div>
-
-    <div class="column people">
-        <div class="content">
-        <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-        <h4>Girl</h4>
-        <p>Lorem ipsum dolor..</p>
-        </div>
-    </div>
-    <div class="column people">
-        <div class="content">
-        <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-        <h4>Man</h4>
-        <p>Lorem ipsum dolor..</p>
-        </div>
-    </div>
-    <div class="column people">
-        <div class="content">
-        <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-        <h4>Woman</h4>
-        <p>Lorem ipsum dolor..</p>
-        </div>
-    </div>
+    
     <!-- END GRID -->
     </div>
+    <script src="scripts/skills.js"></script>
 
-    </body>
+</body>
 </html>
