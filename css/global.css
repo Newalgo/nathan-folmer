@@ -87,6 +87,23 @@ section #profil {
   width: 50%;
 }
 
+/* --- programmation --- */
+.illustration-programmation{
+  float: right; 
+  width: 50%;
+}
+
+.text-programmation{
+  float: left;
+  width: 50%;
+}
+
+#video{
+  width: 300px;
+  height: 200px;
+}
+
+
 /* --- SLIDER --- */
 #slider {
   width: 425px;
